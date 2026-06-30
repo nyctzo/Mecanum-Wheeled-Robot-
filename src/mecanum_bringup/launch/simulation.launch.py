@@ -9,8 +9,8 @@ import os
 
 def generate_launch_description():
 
-    description_pkg = get_package_share_directory(
-        "my_robot_description"
+    mecanum_wheel_pkg = get_package_share_directory(
+        "mecanum_wheel"
     )
 
     bringup_pkg = get_package_share_directory(
@@ -18,7 +18,7 @@ def generate_launch_description():
     )
 
     gazebo_launch = os.path.join(
-        description_pkg,
+        mecanum_wheel_pkg,
         "launch",
         "gazebo_robot.launch.py",
     )
